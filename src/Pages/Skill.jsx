@@ -112,7 +112,7 @@ const Skill=()=>{
                                         return  <>
                                           <img   key={index} className=" md:ms-10 ms-5 p-2 md:mt-15 
                                           mt-10
-                                          md:w-[10vw] w-[12vw] h-[8vw] border-3 border-gray-500"
+                                          md:w-[10vw] w-[15vw] h-[15vw] border-3 border-gray-500"
                                         src={item.img}
                                         ></img>
                                         

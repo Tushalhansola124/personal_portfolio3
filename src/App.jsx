@@ -7,7 +7,7 @@ import Project from './Pages/Project';
 import Contact from './Pages/Contact';
 import Footer from './Pages/Footer';
 import Menu from './Header/Header';
-import {motion,useScroll} from 'Motion/react';
+// import {motion,useScroll} from 'Motion/react';
 
 
 

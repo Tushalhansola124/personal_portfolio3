@@ -104,7 +104,7 @@ const Skill=()=>{
         
           
               ">MySkill</h1>
-                  <div  ref={Box1} className="w-[90vw] rounded-2xl h-[70vw] md:h-[35vw] ml-[4vw] me-[4vw] bg-white">
+                  <div  ref={Box1} className="w-[90vw] rounded-2xl h-[80vw] md:h-[35vw] ml-[4vw] me-[4vw] bg-white">
                         <h2 className="text-3xl bg-gray-300 text-center md:py-4 py-2 font-semibold font-mono animate-pulse">Frontend Languages</h2>
                           <div   className="flex  flex-wrap   gap-[1vw]">
 
@@ -112,7 +112,8 @@ const Skill=()=>{
                                         return  <>
                                           <img   key={index} className=" md:ms-10 ms-5 p-2 md:mt-15 
                                           mt-10
-                                          md:w-[10vw] w-[15vw] h-[15vw] border-3 border-gray-500"
+                                          
+                                          md:w-[10vw] w-[10vw] h-[10vw] border-3 border-gray-500"
                                         src={item.img}
                                         ></img>
                                         

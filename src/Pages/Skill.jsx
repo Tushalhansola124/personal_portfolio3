@@ -113,7 +113,7 @@ const Skill=()=>{
                                           <img   key={index} className=" md:ms-10 ms-5 p-2 md:mt-15 
                                           mt-10
                                           
-                                          md:w-[10vw] w-[12vw] h-[15vw] border-3 border-gray-500"
+                                          md:w-[10vw] w-[8vw] h-[9vw] border-3 border-gray-500"
                                         src={item.img}
                                         ></img>
                                         
@@ -139,7 +139,7 @@ const Skill=()=>{
                                         return  <>
                                           <img   key={index} className=" md:ms-10 ms-5 p-2 md:mt-15 
                                           mt-10
-                                          md:w-[12vw] w-[15vw] h-[vw] border-3 border-gray-500"
+                                          md:w-[12vw] w-[8vw] h-[9vw] border-3 border-gray-500"
                                         src={item.img}
                                         ></img>
                                         

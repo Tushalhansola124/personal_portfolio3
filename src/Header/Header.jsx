@@ -36,12 +36,12 @@ return (
     <div className="max-w-7xl mx-auto flex justify-between items-center">
       {/* Logo */}
       <div className="text-white font-bold text-2xl">
-        <img 
+        <a href="#"><img 
         className="md:w-[5vw] md:rounded-3xl md:h-[5vw]
         w-[12vw]  rounded-3xl h-[12vw]
         "
 
-        src="Logo1.png"></img>
+        src="Logo1.png"></img></a>
       </div>
 
       {/* Mobile Menu Button */}

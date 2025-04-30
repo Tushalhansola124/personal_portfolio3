@@ -2,3 +2,12 @@
 body{
   overflow-x:hidden;
 }
+/* Add this to your index.css file */
+.active-link {
+  border-bottom: 2px solid #d1d5db; /* light gray border */
+}
+.particles-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}

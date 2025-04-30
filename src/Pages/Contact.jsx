@@ -1,44 +1,66 @@
 import React from "react";
-import { BsGithub } from "react-icons/bs";
-const Contact =()=>{
-  return(
-        <>
-        <div  id="contact" className="w-[100vw]  p-[10vw]  h-auto flex-wrap bg-gray-950">
-          <h1 className="text-white py-  font-mono text-4xl text-center">Contact Us</h1>
-              <center>
-              <div className="bg-white mt-10 p-8 rounded-lg shadow-lg max-w-lg w-full fade-in-up">
-    <h2 class="text-2xl font-semibold text-center text-gray-800 mb-6">Contact Us</h2>
+import { FiMail, FiUser, FiMessageCircle } from "react-icons/fi";
+import Particles from "../Componets/Particles";
 
-    <form>
-      
-    
-      <div className="mb-4">
-        <label htmlFor="name" className="block text-gray-700 text-sm font-medium">Your Name</label>
-        <input type="text" id="name" name="name" required className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none input-focus" placeholder="Enter your full name"/>
-      </div>
+const Contact = () => {
+  return (
+    <>
+      <div id="contact" className="w-full min-h-screen bg-gray-950 relative flex items-center justify-center p-6">
+        <Particles />
+        <div className="absolute inset-0 bg-black/30 backdrop-blur-md z-0" />
 
-    
-      <div className="mb-4">
-        <label htmlFor="email" className="block text-gray-700 text-sm font-medium">Your Email</label>
-        <input type="email" id="email" name="email" required className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none input-focus" placeholder="Enter your email"/>
-      </div>
+        <div className="relative z-10 bg-white/10 backdrop-blur-lg p-10 rounded-2xl shadow-2xl max-w-2xl w-full text-white animate-fade-in">
+          <h1 className="text-4xl font-bold text-center mb-8 font-mono">Contact Us</h1>
+          <form className="space-y-6">
+            {/* Name */}
+            <div className="flex items-center bg-white/10 border border-white/20 rounded-lg px-4 py-3 focus-within:ring-2 focus-within:ring-cyan-400">
+              <FiUser className="text-xl mr-3 text-cyan-400" />
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required
+                className="bg-transparent w-full outline-none text-white placeholder-gray-300"
+              />
+            </div>
 
-  
-      <div className="mb-4">
-        <label htmlFor="message" className="block text-gray-700 text-sm font-medium">Your Message</label>
-        <textarea id="message" name="message" rows="4" required className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none input-focus" placeholder="Write your message here..."></textarea>
-      </div>
+            {/* Email */}
+            <div className="flex items-center bg-white/10 border border-white/20 rounded-lg px-4 py-3 focus-within:ring-2 focus-within:ring-cyan-400">
+              <FiMail className="text-xl mr-3 text-cyan-400" />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+                className="bg-transparent w-full outline-none text-white placeholder-gray-300"
+              />
+            </div>
 
-      <div class="text-center">
-        <button type="submit" className="px-6 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 transition duration-300 ease-in-out transform hover:scale-105">
-          Submit
-        </button>
-      </div>
-    </form>
-  </div>  
-              </center>     
+            {/* Message */}
+            <div className="flex items-start bg-white/10 border border-white/20 rounded-lg px-4 py-3 focus-within:ring-2 focus-within:ring-cyan-400">
+              <FiMessageCircle className="text-xl mr-3 mt-1 text-cyan-400" />
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                rows="4"
+                required
+                className="bg-transparent w-full outline-none text-white placeholder-gray-300 resize-none"
+              ></textarea>
+            </div>
+
+            <div className="text-center">
+              <button
+                type="submit"
+                className="bg-cyan-500 hover:bg-cyan-600 transition-transform duration-300 px-8 py-3 rounded-full text-white font-semibold shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-cyan-300"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
         </div>
-        </>
-      );
-} 
+      </div>
+    </>
+  );
+};
+
 export default Contact;

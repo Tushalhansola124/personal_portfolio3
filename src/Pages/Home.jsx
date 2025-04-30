@@ -10,7 +10,7 @@ import ScrollVelocity from "/src/Componets/ScrollVelocity.jsx";
 const Home = () => {
   // const resume="https://drive.google.com/file/d/1rpA78aJmeZTS7jr3KnhmUsTUgOsDww-z/view?usp=drive_link";
   // const resume = "public/resume.pdf";
-  http://localhost:5173/resume.pdf
+  
    const resume = " http://localhost:5173/resume.pdf";
 
   const DownloadFile = (url) => {

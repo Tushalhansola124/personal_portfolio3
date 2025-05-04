@@ -6,7 +6,7 @@ import { useGSAP } from "@gsap/react";
 import Footer from "./Footer";
 import Particles from "../Componets/Particles";
 import ScrollVelocity from "/src/Componets/ScrollVelocity.jsx";
-import resume from "/public/Resume.pdf";
+import resume from "./public/Resume.pdf";
 
 const Home = () => {
   // const resume="https://drive.google.com/file/d/1rpA78aJmeZTS7jr3KnhmUsTUgOsDww-z/view?usp=drive_link";

@@ -61,7 +61,7 @@ const Home = () => {
             "Hello, I am Tushal, currently pursuing my studies at Shri V.J. Modha College of IT, affiliated with BKNMU. My focus is on becoming a full-stack web developer, and I have experience with HTML, CSS, JavaScript, React, Bootstrap, and GSAP."
           </p>
           <div>
-            <a  href="/Resume.txt" download="Tushal hansola(Frontend Devoloper)resume">
+            <a  href="public/Resume.pdf" download="Tushal hansola(Frontend Devoloper)resume">
             <button
               
               className="md:text-4xl md:mt-10 md:cursor-pointer md:flex md:left-5 md:mb-[10vh] md:w-[20vw] md:bottom-1 md:hover:md:bg-gray-700 md:p-[3vh] md:px-10 md:bg-gray-900 md:text-white md:justify-between md:rounded-2xl text-white mt-7 border-amber-50 border-1 cursor-pointer flex left-6 mb-8 w-[25vw] text-1xl bottom-1 bg-gray-700 pt-2 pl-4 pb-2 rounded"

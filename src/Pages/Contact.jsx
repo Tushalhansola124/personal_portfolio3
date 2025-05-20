@@ -2,12 +2,13 @@ import React from "react";
 import { FiMail, FiUser, FiMessageCircle } from "react-icons/fi";
 import Particles from "../Componets/Particles";
 
+
 const Contact = () => {
   return (
     <>
       <div id="contact" className="w-full min-h-screen bg-gray-950 relative flex items-center justify-center p-6">
         <Particles />
-        <div className="absolute inset-0 bg-black/30 backdrop-blur-md z-0" />
+        <div className="absolute inset-0 bg-black/30 z-0" />
 
         <div className="relative z-10 bg-white/10 backdrop-blur-lg p-10 rounded-2xl shadow-2xl max-w-2xl w-full text-white animate-fade-in">
           <h1 className="text-4xl font-bold text-center mb-8 font-mono">Contact Us</h1>

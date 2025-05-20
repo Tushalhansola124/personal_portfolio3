@@ -7,6 +7,11 @@ import Footer from "./Footer";
 import Particles from "../Componets/Particles";
 import ScrollVelocity from "/src/Componets/ScrollVelocity.jsx";
 import resume1 from "../assets/resume.pdf";
+import SplashCursor from '../Componets/SplashCursor.jsx';
+import GradientText from '../Componets/GradientText.jsx';
+import Orb from '../Componets/Orb.jsx';
+
+
 
 const Home = () => {
   // const resume="https://drive.google.com/file/d/1rpA78aJmeZTS7jr3KnhmUsTUgOsDww-z/view?usp=drive_link";
@@ -41,19 +46,33 @@ const Home = () => {
         id="home"
         className="md:bg-gray-950 md:h-[60vw] md:w-[100vw] md:flex w-[100vw] h-auto p-5 bg-gray-950"
       >
+        <SplashCursor />
         <Particles />
 
         <div className="md:w-[50vw] md:text-6xl md:p-21 w-[90vw] text-1xl p-0">
           <h1 className="md:text-white md:relative md:font-mono md:mt-[5vw] text-white text-5xl md:h-[10vw] h-[6vw] md:text-7xl">
-            I'm a{" "}
+            I'm a
+          
+              <GradientText
+              colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+              animationSpeed={3}
+              showBorder={false}
+              className="custom-class"
+            >
+              
+              
             <Typewriter
+              
               words={["Frontend Developer", "Graphic Designer", "React Js Developer"]}
               cursor
               loop
               typeSpeed={120}
               delaySpeed={50}
               deleteSpeed={100}
-            ></Typewriter>
+            >
+
+            </Typewriter>
+            </GradientText>
           </h1>
 
           <p className="md:text-2xl md:top-0 md:left-0 md:mt-[2vw] md:w-[45vw] text-white pt-27">
@@ -72,18 +91,31 @@ const Home = () => {
           </div>
         </div>
 
+      
+
         <div className="md:w-[50vw]" ref={imgRef}>
-          <a href="https://www.linkedin.com/in/tushal-hansola-92a909336/">
+            <div style={{ width: '100%', height: '740px', position: 'absolute' }}>
+        <a href="https://www.linkedin.com/in/tushal-hansola-92a909336/">
+              <Orb
+    hoverIntensity={0.5}
+    rotateOnHover={true}
+    hue={0}
+    forceHoverState={false}
+  />
             <img
-              className="md:scale-90 md:border-[0.5vw] md:border-t-[1px] md:border-b-[1px] md:border-l-[1px] md:border-r-[1px] md:border-transparent  md:transition-all md:duration-500 cursor-pointer md:shadow-[29vw] md:mt-19 md:w-[40vw] md:h-[40vw] md:ms-[4vw] md:rounded-full border-transparent rounded-b-full rounded-t-full"
+              className="md:scale-90 md:visible invisible md:border-[0.5vw] md:border-t-[1px] md:border-b-[1px] md:border-l-[1px] md:border-r-[1px] md:border-transparent  md:transition-all md:duration-500 cursor-pointer md:shadow-[29vw] md:mt-19 md:w-[40vw] md:h-[40vw] md:ms-[4vw] md:rounded-full border-r-yellow-100 rounded-b-full rounded-t-full border-emerald-500"
               src="img2.png"
               alt="profile"
             />
           </a>
+
+      
+        </div>
         </div>
       </div>
 
       <div>
+        
         <ScrollVelocity
           texts={["Frontend Developer *", " * React Js Developer"]}
           velocity={200}

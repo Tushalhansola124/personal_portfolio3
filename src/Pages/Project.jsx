@@ -5,6 +5,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import sundown from "/public/sundown.jpeg";
 import animation from "/public/GSAP_Project.jpeg";
 import resturant from "/public/resturant.png";
+import GradientText from '../Componets/GradientText.jsx';
 
 const Project = () => {
   const cardsRef = useRef([]);
@@ -55,7 +56,13 @@ const Project = () => {
   return (
     <div id="project" className="bg-gray-950 w-full py-24 px-4">
       <h1 className="text-white text-4xl font-bold font-mono text-center mb-12">
-        My Projects
+              <GradientText
+          colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+          animationSpeed={3}
+          showBorder={false}
+          className="custom-class"
+        > My Projects
+        </GradientText>
       </h1>
       <div className="flex flex-wrap justify-center gap-10">
         {projects.map((item, index) => (

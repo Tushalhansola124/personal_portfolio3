@@ -15,6 +15,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Particles from "../Componets/Particles";
+import GradientText from '../Componets/GradientText.jsx';
 
 const Skill = () => {
   const frontendRef = useRef();
@@ -83,16 +84,22 @@ const Skill = () => {
         }
       `}</style>
 
-      <div id="skill" className="w-full bg-gray-950 pb-20 overflow-hidden">
+      <div id="skill" className="w-full bg-gray-950 pb-25 overflow-hidden">
         <Particles />
         <h1 className="text-2xl sm:text-3xl md:text-4xl text-white font-bold font-mono text-center p-6 scale-90">
-          MySkill
+          <GradientText
+                  colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+                  animationSpeed={3}
+                  showBorder={false}
+                  className="custom-class"
+                > MySkill
+                </GradientText>
         </h1>
 
         {/* Frontend Skills */}
         <div
           ref={frontendRef}
-          className="w-[90vw] sm:w-[70vw] rounded-2xl md:h-auto mx-auto bg-white shadow-lg mb-10 overflow-hidden"
+          className="w-[90vw] sm:w-[70vw] rounded-2xl md:h-auto mx-auto bg-white shadow-lg mb-20 overflow-hidden"
         >
           <h2 className="text-xl sm:text-2xl md:text-3xl bg-gray-300 text-center md:py-4 py-2 font-semibold font-mono animate-pulse">
             Frontend Languages

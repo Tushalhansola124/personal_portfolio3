@@ -38,7 +38,7 @@ const Header = () => {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <nav className="bg-white dark:bg-gray-950 p-4 shadow-md transition-colors duration-300">
+    <nav className="bg-white w-full dark:bg-gray-950 p-4 shadow-md transition-colors duration-300">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <a href="#" className="font-bold text-2xl">

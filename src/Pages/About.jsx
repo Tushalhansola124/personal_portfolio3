@@ -4,7 +4,8 @@ import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Particles from "../Componets/Particles";
 import RollingGallery from "../Componets/Rolling_Gallery.jsx";
-
+import GradientText from '../Componets/GradientText.jsx';
+import CircularText from '../Componets/CircularText.jsx';
 const About = () => {
   gsap.registerPlugin(ScrollTrigger);
 
@@ -33,7 +34,14 @@ const About = () => {
         {/* Left Section */}
         <div className="md:w-1/2 w-full space-y-10">
           <h1 className="text-3xl md:text-5xl font-bold text-white text-center md:text-left font-serif">
-            About Us
+          <GradientText
+  colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+  animationSpeed={3}
+  showBorder={false}
+  className="custom-class"
+>
+About us
+</GradientText>
           </h1>
           <div ref={aboutRef} className="text-white text-base md:text-xl leading-relaxed tracking-wide font-mono">
             <p>
@@ -42,16 +50,17 @@ const About = () => {
               Alongside my frontend skills, I’m currently expanding my expertise by learning backend development. In addition to coding, I also have a creative side and am skilled in graphic design, having worked on various projects that combine both technical and visual elements.
             </p>
           </div>
-
-          
-        </div>
-
-        {/* Right Section */}
-        <div className="md:w-1/2 w-full mt-10 md:mt-0 flex justify-center items-center">
-          {/* <RollingGallery autoplay pauseOnHover /> */}
-          <div className="text-white mt-10">
-            <h2 className="text-2xl md:text-4xl font-bold text-center md:text-left underline mb-4 animate-pulse">
-              Education
+                <div className="text-white mt-10">
+            <h2 className="text-2xl md:text-4xl font-bold text-center md:text-left  mb-4 ">
+            
+              <GradientText
+  colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+  animationSpeed={3}
+  showBorder={false}
+  className="custom-class"
+>
+    Educations
+</GradientText>
             </h2>
             <ul className="list-disc pl-5 space-y-3 text-base md:text-lg font-mono">
               <li>I  have Completed 10th at Shri O.N. Modha School – 40.43%</li>
@@ -60,6 +69,18 @@ const About = () => {
               <li>Career Focus: Full Stack Web Development</li>
             </ul>
           </div>
+          
+        </div>
+
+        {/* Right Section */}
+        <div className="md:w-1/2 md:visible invisible w-full mt-10 md:mt-0 flex justify-center items-center">
+          {/* <RollingGallery autoplay pauseOnHover /> */}
+              <CircularText
+  text="FRONTEND DEVELOPER * REACT JS DEVELOPER * GRAPHIC DESIGNER*"
+  onHover="speedUp"
+  spinDuration={20}
+  className="custom-class"
+/>
         </div>
       </div>
     </section>

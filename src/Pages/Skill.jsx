@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import Html from '/public/html.jpg';
-import Css from '/public/css.png'; // fixed typo
+import Css from '/public/css.png';
 import Js from '/public/js.png';
 import boostrap from '/public/boostrap.jpg';
 import tailwind from '/public/tailwind.jpg';
@@ -9,8 +9,8 @@ import gsap1 from '/public/gsap.png';
 import PHP from '/public/php.png';
 import git from '/public/git2.png';
 import mysql from '/public/mysql.png';
-
 import github2 from '/public/github2.png';
+
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -84,20 +84,21 @@ const Skill = () => {
         }
       `}</style>
 
-      <div id="skill" className="w-full bg-gray-950 pb-25 overflow-hidden">
+      <div id="skill" className="w-full bg-gray-950 pb-20 overflow-hidden">
         <Particles />
         <h1 className="text-2xl sm:text-3xl md:text-4xl text-white font-bold font-mono text-center p-6 scale-90">
           <GradientText
-                  colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
-                  animationSpeed={3}
-                  showBorder={false}
-                  className="custom-class"
-                > MySkill
-                </GradientText>
+            colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+            animationSpeed={3}
+            showBorder={false}
+            className="custom-class"
+          >
+            MySkill
+          </GradientText>
         </h1>
 
         {/* Frontend Skills */}
-        <div
+        {/*<div
           ref={frontendRef}
           className="w-[90vw] sm:w-[70vw] rounded-2xl md:h-auto mx-auto bg-white shadow-lg mb-20 overflow-hidden"
         >
@@ -117,10 +118,10 @@ const Skill = () => {
               ))}
             </div>
           </div>
-        </div>
+        </div>*}
 
         {/* Backend Skills */}
-        <div
+        {/*<div
           ref={backendRef}
           className="w-[90vw] sm:w-[70vw] rounded-2xl md:h-auto mx-auto bg-white shadow-lg overflow-hidden"
         >
@@ -140,6 +141,43 @@ const Skill = () => {
               ))}
             </div>
           </div>
+        </div>*}
+
+        {/* Responsive Skill Bars Section */}
+        <div className="w-[90vw] sm:w-[80vw] md:w-[70vw] mx-auto mt-10 px-4">
+          <h3 className="text-white text-2xl sm:text-3xl font-bold mb-6 text-center font-mono">
+            {/*Skill Proficiency*/}
+          </h3>
+
+          {[
+            { name: "HTML", level: 80, color: "bg-red-500" },
+            { name: "CSS", level: 70, color: "bg-blue-500" },
+            { name: "JavaScript", level: 60, color: "bg-yellow-400" },
+            { name: "Bootstrap", level: 70, color: "bg-purple-500" },
+            { name: "Tailwind CSS", level:65,color: "bg-cyan-400" },
+            { name: "React.js", level: 70, color: "bg-sky-400" },
+            { name: "GSAP", level: 75, color: "bg-green-500" },
+            { name: "PHP", level: 70, color: "bg-indigo-500" },
+            { name: "MySQL", level: 78, color: "bg-orange-500" },
+            { name: "Git", level: 60, color: "bg-pink-500" },
+            { name: "GitHub", level: 70, color: "bg-gray-500" },
+          ].map((skill, idx) => (
+            <div key={idx} className="mb-5">
+              <div className="flex justify-between items-center mb-1 text-sm sm:text-base text-white font-medium">
+                <span>{skill.name}</span>
+                <span>{skill.level}%</span>
+              </div>
+              <div className="w-full bg-gray-800 rounded-full h-3 sm:h-4">
+                <div
+                  className={`h-3 sm:h-4 ${skill.color} rounded-full`}
+                  style={{
+                    width: `${skill.level}%`,
+                    transition: "width 1s ease-in-out"
+                  }}
+                ></div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </>

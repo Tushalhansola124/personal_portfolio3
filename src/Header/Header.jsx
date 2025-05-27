@@ -125,6 +125,18 @@ const Header = () => {
           </li>
           <li className="v5 hover:text-gray-400">
             <ScrollLink
+              to="certificate"
+              smooth
+              spy
+              offset={10}
+              duration={400}
+              activeClass="active-link"
+            >
+              Certificate
+            </ScrollLink>
+          </li>
+          <li className="v5 hover:text-gray-400">
+            <ScrollLink
               to="contact"
               smooth
               spy
@@ -198,6 +210,18 @@ const Header = () => {
                 Skill
               </ScrollLink>
             </li>
+            <li className="v5 hover:text-gray-400">
+            <ScrollLink
+              to="certificate"
+              smooth
+              spy
+              offset={10}
+              duration={400}
+              activeClass="active-link"
+            >
+            Certificate
+            </ScrollLink>
+          </li>
             <li onClick={closeMenu}>
               <ScrollLink
                 to="contact"

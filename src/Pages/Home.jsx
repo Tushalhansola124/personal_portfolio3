@@ -66,7 +66,7 @@ const Home = () => {
               
             <Typewriter
               
-              words={["Frontend Developer", "Graphic Designer", "React Js Developer"]}
+              words={["Frontend  Web Developer", "Graphic Designer", "React Js Developer"]}
               cursor
               loop
               typeSpeed={120}

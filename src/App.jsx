@@ -8,6 +8,7 @@ import Contact from './Pages/Contact';
 import Footer from './Pages/Footer';
 import Menu from './Header/Header';
 import Particles from './Componets/Particles';
+import Certificate from './Pages/certificate';
 // import {motion,useScroll} from 'Motion/react';
 
 
@@ -35,6 +36,7 @@ function App() {
           <About></About>
           <Project></Project>
           <Skill></Skill>
+          <Certificate></Certificate>
         
           <Contact></Contact>
           

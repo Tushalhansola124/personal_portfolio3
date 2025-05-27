@@ -11,7 +11,7 @@ const Contact = () => {
         <div className="absolute inset-0 bg-black/30 z-0" />
 
         <div className="relative z-10 bg-white/10 backdrop-blur-lg p-10 rounded-2xl shadow-2xl max-w-2xl w-full text-white animate-fade-in">
-          <h1 className="text-4xl font-bold text-center mb-8 font-mono">Contact Us</h1>
+          <h1 className="text-4xl font-bold text-center mb-8 font-mono">Contact Me</h1>
           <form className="space-y-6">
             {/* Name */}
             <div className="flex items-center bg-white/10 border border-white/20 rounded-lg px-4 py-3 focus-within:ring-2 focus-within:ring-cyan-400">

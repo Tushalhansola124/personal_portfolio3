@@ -36,7 +36,7 @@ const Certificate = () => {
   const projects = [
     {
       img: certificate1,
-      link: "public/certificate1.png",
+      link: "http://localhost:5173/public/certificate1.png",
       monthYear: "May 2025",
       title: "Hackathon by Gravity Coding Pvt Ltd",
     },

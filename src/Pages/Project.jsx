@@ -5,6 +5,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import sundown from "/public/sundown.jpeg";
 import animation from "/public/GSAP_Project.jpeg";
 import resturant from "/public/resturant.png";
+import chatApp from "/public/chatApp.png";
 import GradientText from '../Componets/GradientText.jsx';
 
 const Project = () => {
@@ -50,6 +51,11 @@ const Project = () => {
       img: resturant,
       link: "https://cafe-restaurant-project2.vercel.app/",
       text: "React.js Website with Animations using ReactBits",
+    },
+    {
+      img:chatApp,
+      link: "https://chat-app-rouge-omega.vercel.app/",
+      text: "Chat Application Using ZEGOCLOUD",
     },
   ];
 

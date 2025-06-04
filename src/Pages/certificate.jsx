@@ -36,7 +36,8 @@ const Certificate = () => {
   const projects = [
     {
       img: certificate1,
-      link: "https://drive.google.com/file/d/19T6F1OQ52m4be8nZJPxAoKxH9BBTO0X3/view?usp=drive_link",
+      link: "/public/certificate1.png",
+      
       monthYear: "May 2025",
       title: "Hackathon by Gravity Coding Pvt Ltd",
     },

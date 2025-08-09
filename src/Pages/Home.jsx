@@ -99,12 +99,12 @@ const Home = () => {
         <div className="md:w-[50vw]" ref={imgRef}>
             <div style={{ width: '100%', height: '740px', position: 'absolute' }}>
         <a href="https://www.linkedin.com/in/tushal-hansola-92a909336/">
-              <Orb
+{/*               <Orb
     hoverIntensity={0.5}
     rotateOnHover={true}
     hue={0}
     forceHoverState={false}
-  />
+  /> */}
             <img
               className="md:scale-90 md:visible invisible md:border-[0.5vw] md:border-t-[1px] md:border-b-[1px] md:border-l-[1px] md:border-r-[1px] md:border-transparent  md:transition-all md:duration-500 cursor-pointer md:shadow-[29vw] md:mt-19 md:w-[40vw] md:h-[40vw] md:ms-[4vw] md:rounded-full border-r-yellow-100 rounded-b-full rounded-t-full border-emerald-500"
               src="img2.png"

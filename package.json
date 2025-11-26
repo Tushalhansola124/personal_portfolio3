@@ -14,7 +14,10 @@
     "@react-three/fiber": "^8.13.6",
     "@tailwindcss/vite": "^4.0.3",
     "framer-motion": "^12.12.1",
+<<<<<<< HEAD
     "git": "^0.1.5",
+=======
+>>>>>>> 856a0f2b123ed1a9319b40510524af6a4dc99945
     "gsap": "^3.12.7",
     "lucide-react": "^0.488.0",
     "meshline": "^3.3.1",
@@ -42,6 +45,10 @@
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.16",
     "globals": "^15.14.0",
+<<<<<<< HEAD
     "vite": "^6.3.5"
+=======
+    "vite": "^6.0.5"
+>>>>>>> 856a0f2b123ed1a9319b40510524af6a4dc99945
   }
 }

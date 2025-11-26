@@ -12,6 +12,7 @@ body{
   position: relative;
   width: 100%;
   height: 100%;
+<<<<<<< HEAD
 }
 
 .profile-border {
@@ -36,3 +37,6 @@ body{
 html {
   font-family: 'Poppins', sans-serif;
 }
+=======
+}
+>>>>>>> 856a0f2b123ed1a9319b40510524af6a4dc99945

@@ -25,8 +25,11 @@ const Skill = () => {
     { src: Html, title: "HTML" },
     { src: Css, title: "CSS" },
     { src: Js, title: "JavaScript" },
+<<<<<<< HEAD
     
     
+=======
+>>>>>>> 856a0f2b123ed1a9319b40510524af6a4dc99945
     { src: boostrap, title: "Bootstrap" },
     { src: tailwind, title: "Tailwind CSS" },
     { src: react, title: "React.js" },

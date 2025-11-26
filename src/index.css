@@ -1,0 +1,38 @@
+@import "tailwindcss";
+body{
+  overflow-x:hidden;
+  padding: 0;
+ margin: 0;
+}
+/* Add this to your index.css file */
+.active-link {
+  border-bottom: 2px solid #d1d5db; /* light gray border */
+}
+.particles-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.profile-border {
+  position: relative;
+  padding: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: 0.4s ease;
+}
+
+.profile-border:hover {
+  border-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.15);
+}
+* {
+  font-family: 'Poppins', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+html {
+  font-family: 'Poppins', sans-serif;
+}

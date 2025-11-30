@@ -76,13 +76,10 @@ About us
         <div className="md:w-1/2 md:visible invisible w-full mt-10 md:mt-0 flex justify-center items-center">
           {/* <RollingGallery autoplay pauseOnHover /> */}
               <CircularText
-<<<<<<< HEAD
-  text="FRONTEND DEVELOPER * REACT JS DEVELOPER * PHP DEVELOPER*"
-=======
-  text="FRONTEND DEVELOPER * REACT JS DEVELOPER * GRAPHIC DESIGNER*"
->>>>>>> 856a0f2b123ed1a9319b40510524af6a4dc99945
+
   onHover="speedUp"
   spinDuration={20}
+  text="React js Developer * PHP Developer * Next.js Developer"
   className="custom-class"
 />
         </div>

@@ -2,33 +2,24 @@ import React, { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/ScrollTrigger";
-<<<<<<< HEAD
+
 import GradientText from "../Componets/GradientText.jsx";
 
-=======
->>>>>>> 856a0f2b123ed1a9319b40510524af6a4dc99945
 import sundown from "/public/sundown.jpeg";
 import animation from "/public/GSAP_Project.jpeg";
 import resturant from "/public/resturant.png";
 import chatApp from "/public/chatApp.png";
-<<<<<<< HEAD
 import class1 from "/public/class1.png";
-=======
-import GradientText from '../Componets/GradientText.jsx';
->>>>>>> 856a0f2b123ed1a9319b40510524af6a4dc99945
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Project = () => {
   const cardsRef = useRef([]);
-  gsap.registerPlugin(ScrollTrigger);
 
   const addToRefs = (el) => {
-<<<<<<< HEAD
-    if (el && !cardsRef.current.includes(el)) cardsRef.current.push(el);
-=======
     if (el && !cardsRef.current.includes(el)) {
       cardsRef.current.push(el);
     }
->>>>>>> 856a0f2b123ed1a9319b40510524af6a4dc99945
   };
 
   useGSAP(() => {
@@ -37,14 +28,9 @@ const Project = () => {
         scrollTrigger: {
           trigger: card,
           start: "top 80%",
-<<<<<<< HEAD
-        },
-        y: 60,
-=======
           toggleActions: "play none none reverse",
         },
         y: 50,
->>>>>>> 856a0f2b123ed1a9319b40510524af6a4dc99945
         opacity: 0,
         scale: 0.9,
         duration: 0.8,
@@ -58,27 +44,18 @@ const Project = () => {
     {
       img: sundown,
       link: "https://sundown-studio-rose.vercel.app/",
-<<<<<<< HEAD
       title: "Sundown Studio",
       tech: "React.js, CSS, Responsive Design",
-=======
-      text: "Sundown Studio",
->>>>>>> 856a0f2b123ed1a9319b40510524af6a4dc99945
     },
     {
       img: animation,
       link: "https://gsap-project-xi.vercel.app/",
-<<<<<<< HEAD
       title: "Animation Using GSAP",
       tech: "GSAP, JavaScript, Animation",
-=======
-      text: "Animation Using GSAP",
->>>>>>> 856a0f2b123ed1a9319b40510524af6a4dc99945
     },
     {
       img: resturant,
       link: "https://cafe-restaurant-project2.vercel.app/",
-<<<<<<< HEAD
       title: "React.js Website with Animations",
       tech: "React.js, React-Bits, Responsive UI",
     },
@@ -88,24 +65,15 @@ const Project = () => {
       title: "Chat Application Using ZEGOCLOUD",
       tech: "React.js, ZEGOCLOUD SDK, Real-time Chat",
     },
-     {
+    {
       img: class1,
       link: "https://github.com/Tushalhansola124/NPG_Computers",
       title: "Institute Management System",
-      tech: "PHP,Mysql,Boostrap",
-=======
-      text: "React.js Website with Animations using ReactBits",
-    },
-    {
-      img:chatApp,
-      link: "https://chat-app-rouge-omega.vercel.app/",
-      text: "Chat Application Using ZEGOCLOUD",
->>>>>>> 856a0f2b123ed1a9319b40510524af6a4dc99945
+      tech: "PHP, MySQL, Bootstrap",
     },
   ];
 
   return (
-<<<<<<< HEAD
     <section id="project" className="bg-gray-950 w-full py-24 px-6">
       <h1 className="text-white text-4xl font-bold text-center mb-14">
         <GradientText
@@ -122,72 +90,51 @@ const Project = () => {
           <div
             key={i}
             ref={addToRefs}
-            className="group relative overflow-hidden rounded-3xl shadow-2xl transform transition duration-500 hover:scale-105 hover:shadow-2xl"
+            className="group relative overflow-hidden rounded-3xl shadow-2xl 
+                       transform transition duration-500 hover:scale-105 hover:shadow-2xl"
           >
-            {/* Project Image */}
+            {/* Image */}
             <img
               src={proj.img}
               alt={proj.title}
-              className="w-full h-60 md:h-64 lg:h-56 object-cover group-hover:scale-110 transition-transform duration-500"
+              className="w-full h-60 md:h-64 lg:h-56 object-cover 
+                         group-hover:scale-110 transition-transform duration-500"
             />
 
             {/* Overlay */}
-            <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-center items-center text-center px-4">
+            <div className="absolute inset-0 bg-black/60 opacity-0 
+                            group-hover:opacity-100 transition duration-500 
+                            flex flex-col justify-center items-center text-center px-4">
               <h3 className="text-lg md:text-xl font-bold text-white mb-2">
                 {proj.title}
               </h3>
-              <p className="text-sm md:text-base text-gray-300 mb-4">{proj.tech}</p>
+
+              <p className="text-sm md:text-base text-gray-300 mb-4">
+                {proj.tech}
+              </p>
+
               <a
                 href={proj.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block px-4 py-2 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full text-black font-semibold shadow-lg hover:scale-105 transition duration-300"
+                className="inline-block px-4 py-2 bg-gradient-to-r 
+                           from-cyan-400 to-blue-500 rounded-full 
+                           text-black font-semibold shadow-lg 
+                           hover:scale-105 transition duration-300"
               >
                 View Project
               </a>
             </div>
 
             {/* Glow Hover */}
-            <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-cyan-400 to-blue-500 opacity-0 group-hover:opacity-20 blur-2xl transition duration-500 pointer-events-none"></div>
+            <div className="absolute inset-0 rounded-3xl 
+                            bg-gradient-to-r from-cyan-400 to-blue-500 
+                            opacity-0 group-hover:opacity-20 blur-2xl 
+                            transition duration-500 pointer-events-none"></div>
           </div>
         ))}
       </div>
     </section>
-=======
-    <div id="project" className="bg-gray-950 w-full py-24 px-4">
-      <h1 className="text-white text-4xl font-bold font-mono text-center mb-12">
-              <GradientText
-          colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
-          animationSpeed={3}
-          showBorder={false}
-          className="custom-class"
-        > My Projects
-        </GradientText>
-      </h1>
-      <div className="flex flex-wrap justify-center gap-10">
-        {projects.map((item, index) => (
-          <div
-            key={index}
-            ref={addToRefs}
-            className="relative group overflow-hidden rounded-3xl shadow-2xl w-[80vw] md:w-[28vw] transform transition duration-500 hover:scale-[1.03]"
-          >
-            <a href={item.link} target="_blank" rel="noopener noreferrer">
-              <img
-                src={item.img}
-                alt={`Screenshot of ${item.text}`}
-                className="w-full h-[50vw] md:h-[18vw] object-cover group-hover:scale-110 transition-transform duration-500"
-              />
-              <div className="absolute bottom-0 left-0 w-full bg-black/60 backdrop-blur-sm text-white p-4 text-center">
-                <h3 className="text-lg md:text-xl font-semibold font-mono">
-                  {item.text}
-                </h3>
-              </div>
-            </a>
-          </div>
-        ))}
-      </div>
-    </div>
->>>>>>> 856a0f2b123ed1a9319b40510524af6a4dc99945
   );
 };
 

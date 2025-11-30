@@ -9,10 +9,9 @@ import Footer from './Pages/Footer';
 import Menu from './Header/Header';
 import Particles from './Componets/Particles';
 import Certificate from './Pages/certificate';
-<<<<<<< HEAD
+
 import Experience from './Pages/Experience';
-=======
->>>>>>> 856a0f2b123ed1a9319b40510524af6a4dc99945
+
 // import {motion,useScroll} from 'Motion/react';
 
 
@@ -38,10 +37,8 @@ function App() {
           <Menu></Menu>
           <Home></Home>
           <About></About>
-<<<<<<< HEAD
           <Experience></Experience>
-=======
->>>>>>> 856a0f2b123ed1a9319b40510524af6a4dc99945
+
           <Project></Project>
           <Skill></Skill>
           <Certificate></Certificate>

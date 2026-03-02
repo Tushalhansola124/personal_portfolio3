@@ -55,7 +55,7 @@ const Footer = () => {
 
       {/* Bottom Line */}
       <div className="mt-10 text-center text-sm text-gray-600">
-        © 2025. All Rights Reserved.
+        © 2026. All Rights Reserved.
         <br></br> Designed & Developed by Mr. Tushal Hansola
       </div>
     </footer>

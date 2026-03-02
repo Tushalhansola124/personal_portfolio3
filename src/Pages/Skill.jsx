@@ -29,6 +29,7 @@ const Skill = () => {
     { src: boostrap, title: "Bootstrap" },
     { src: tailwind, title: "Tailwind CSS" },
     { src: react, title: "React.js" },
+
     { src: gsap1, title: "GSAP" }
   ];
 
@@ -157,6 +158,7 @@ const Skill = () => {
             { name: "Bootstrap", level: 70, color: "bg-purple-500" },
             { name: "Tailwind CSS", level:65,color: "bg-cyan-400" },
             { name: "React.js", level: 70, color: "bg-sky-400" },
+             { name: "Next.js", level: 80, color: "bg-blue-400" },
             { name: "GSAP", level: 75, color: "bg-green-500" },
             { name: "PHP", level: 70, color: "bg-indigo-500" },
             { name: "MySQL", level: 78, color: "bg-orange-500" },

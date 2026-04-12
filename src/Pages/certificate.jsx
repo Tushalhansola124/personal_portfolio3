@@ -128,7 +128,7 @@ import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import GradientText from "../Componets/GradientText.jsx";
 
-import certificate1 from "/public/certificate1.png";
+import certificate1 from "/certificate1.png";
 
 gsap.registerPlugin(ScrollTrigger);
 

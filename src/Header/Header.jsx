@@ -7,7 +7,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
 
-  // ✅ GSAP Nav Animation
+ 
   useGSAP(() => {
     gsap.from(".v1,.v2,.v3,.v4,.v5", {
       y: 30,
@@ -24,7 +24,7 @@ const Header = () => {
     document.documentElement.classList.toggle("dark", savedTheme);
   }, []);
 
-  // ✅ Toggle Dark Mode
+
   const toggleDarkMode = () => {
     setDarkMode((prev) => {
       const newMode = !prev;
@@ -34,7 +34,6 @@ const Header = () => {
     });
   };
 
-  // ✅ Mobile Menu Controls
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
 
@@ -69,7 +68,7 @@ const Header = () => {
         </button>
 
         {/* ✅ Desktop Menu */}
-        <ul className="hidden lg:flex gap-10 font-mono font-bold text-lg text-white">
+        <ul className="hidden lg:flex gap-10 cursor-pointer font-mono font-bold text-lg text-white">
           <li className="v1 hover:text-gray-300">
             <ScrollLink to="home" smooth spy duration={400}>Home</ScrollLink>
           </li>

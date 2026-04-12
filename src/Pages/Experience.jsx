@@ -151,6 +151,118 @@
 // export default Experience;
 
 
+// import React, { useRef } from "react";
+// import gsap from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import { useGSAP } from "@gsap/react";
+
+// gsap.registerPlugin(ScrollTrigger);
+
+// const Experience = () => {
+//   const cardsRef = useRef([]);
+
+//   useGSAP(() => {
+//     cardsRef.current.forEach((card, i) => {
+//       gsap.from(card, {
+//         opacity: 0,
+//         x: i % 2 === 0 ? -80 : 80,
+//         duration: 1,
+//         ease: "power3.out",
+//         scrollTrigger: {
+//           trigger: card,
+//           start: "top 85%",
+//         },
+//       });
+//     });
+//   }, []);
+
+//   const experiences = [
+//     {
+//       company: "NPG-UNIQUE COMPUTERS",
+//       role: "Computer Technology Instructor",
+//       duration: "7 Months",
+//       description:" I teach basic computer courses such as CCC, MS Word, and general computer operating skills. My teaching focuses on helping students build a strong foundation in computer basics, including typing, file management, internet usage, and essential office tools. I explain concepts in easy language, using practical examples so students can understand and apply what they learn in real life. My goal is to make every student confident and comfortable with computers, whether they are beginners or improving their skills.",
+
+//     },{
+//       company: "Gravity Coding Hackathon",
+//       role: "Frontend Developer (React.js)",
+//       duration: "March 2025 – April 2025",
+//       description:"Skillsvarz 0.1 Hackathon, organized by Gravity Coding March 2025 – April 2025 Selected for Round 2 after delivering a functional, visually engaging restaurant website. Built a responsive full-screen UI with React.js, Tailwind CSS, and GSAP animations. Implemented animated menu categories, reservation form, and scroll-triggered virtual tour. Optimized for UX, clean design, and performance."
+            
+//     },
+//     {
+//       company: "Vaistra Technologies Pvt Ltd",
+//       role: "Software Development Intern (Next.js)",
+//       duration: "4 Months",
+//       description:
+//         "During my Software Development internship at Vaistra Technologies, I worked primarily with  Next.js to build fast, scalable, and modern web applications. I gained hands-on experience in frontend development, backend API integration, component creation, project structuring, and debugging real client projects.",
+//     },
+//      {
+//       company: "Vaistra Technologies Pvt Ltd",
+//       role: "Frontend Web Developer (Next.js)",
+//       duration: "Feb 2026 - Present",
+//       description:
+//         "I am currently working as a Frontend Developer at Vaistra Technologies, where I build fast, scalable, and modern web applications using Next.js. In my role, I develop responsive and high-performance user interfaces, implement secure authentication systems using NextAuth.js, and create reusable UI components with shadcn/ui and Tailwind CSS. I regularly integrate REST APIs, manage dynamic data rendering, and ensure proper project structuring for scalability and maintainability.",
+//     },
+//   ];
+
+//   return (
+//     <section
+//       id="experience"
+//       className="relative w-full bg-black py-24 px-6 md:px-16 text-white overflow-hidden"
+//     >
+//       {/* Background Glow */}
+//       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-blue-900/20 via-purple-900/10 to-transparent pointer-events-none"></div>
+
+//       <h2 className="text-4xl md:text-5xl font-bold text-center mb-20 tracking-wide">
+//         Experiences
+//       </h2>
+
+//       <div className="relative max-w-6xl mx-auto space-y-16">
+
+//         {experiences.map((exp, index) => (
+//           <div
+//             key={index}
+//             ref={(el) => (cardsRef.current[index] = el)}
+//             className="relative group"
+//           >
+//             {/* Side Indicator Line */}
+//             <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-blue-500 to-purple-500 rounded-full hidden md:block"></div>
+
+//             <div className="ml-0 md:ml-6 bg-white/5 backdrop-blur-lg border border-white/10 rounded-3xl p-6 md:p-10 shadow-2xl transition duration-500 hover:scale-[1.02] hover:border-blue-500/40">
+
+//               <div className="flex flex-col md:flex-row md:justify-between md:items-center">
+//                 <h3 className="text-xl md:text-2xl font-semibold text-blue-400">
+//                   {exp.company}
+//                 </h3>
+
+//                 <span className="mt-2 md:mt-0 text-green-400 font-medium text-sm md:text-base">
+//                   {exp.duration}
+//                 </span>
+//               </div>
+
+//               <p className="mt-3 text-gray-300 text-sm md:text-base">
+//                 <span className="font-semibold text-white">Role:</span>{" "}
+//                 {exp.role}
+//               </p>
+
+//               <p className="mt-4 text-gray-400 leading-relaxed text-sm md:text-base">
+//                 {exp.description}
+//               </p>
+//             </div>
+//           </div>
+//         ))}
+
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default Experience;
+
+
+
+
 import React, { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -165,12 +277,13 @@ const Experience = () => {
     cardsRef.current.forEach((card, i) => {
       gsap.from(card, {
         opacity: 0,
-        x: i % 2 === 0 ? -80 : 80,
+        y: 80,
         duration: 1,
         ease: "power3.out",
         scrollTrigger: {
           trigger: card,
           start: "top 85%",
+          toggleActions: "play none none reverse",
         },
       });
     });
@@ -181,28 +294,33 @@ const Experience = () => {
       company: "NPG-UNIQUE COMPUTERS",
       role: "Computer Technology Instructor",
       duration: "7 Months",
-      description:" I teach basic computer courses such as CCC, MS Word, and general computer operating skills. My teaching focuses on helping students build a strong foundation in computer basics, including typing, file management, internet usage, and essential office tools. I explain concepts in easy language, using practical examples so students can understand and apply what they learn in real life. My goal is to make every student confident and comfortable with computers, whether they are beginners or improving their skills.",
-
-    },{
+      type: "Teaching",
+      description:
+        "I teach basic computer courses such as CCC, MS Word, and general computer operating skills. My teaching focuses on helping students build a strong foundation in computer basics, including typing, file management, internet usage, and essential office tools.",
+    },
+    {
       company: "Gravity Coding Hackathon",
       role: "Frontend Developer (React.js)",
       duration: "March 2025 – April 2025",
-      description:"Skillsvarz 0.1 Hackathon, organized by Gravity Coding March 2025 – April 2025 Selected for Round 2 after delivering a functional, visually engaging restaurant website. Built a responsive full-screen UI with React.js, Tailwind CSS, and GSAP animations. Implemented animated menu categories, reservation form, and scroll-triggered virtual tour. Optimized for UX, clean design, and performance."
-            
+      type: "Hackathon",
+      description:
+        "Selected for Round 2 in Skillsvarz 0.1 Hackathon. Built a fully responsive restaurant website using React.js, Tailwind CSS, and GSAP animations with animated menu, reservation system, and virtual tour.",
     },
     {
       company: "Vaistra Technologies Pvt Ltd",
       role: "Software Development Intern (Next.js)",
       duration: "4 Months",
+      type: "Internship",
       description:
-        "During my Software Development internship at Vaistra Technologies, I worked primarily with  Next.js to build fast, scalable, and modern web applications. I gained hands-on experience in frontend development, backend API integration, component creation, project structuring, and debugging real client projects.",
+        "Worked on building fast, scalable web applications using Next.js. Gained hands-on experience in frontend development, API integration, component architecture, and real client project delivery.",
     },
-     {
+    {
       company: "Vaistra Technologies Pvt Ltd",
       role: "Frontend Web Developer (Next.js)",
       duration: "Feb 2026 - Present",
+      type: "Full-time",
       description:
-        "I am currently working as a Frontend Developer at Vaistra Technologies, where I build fast, scalable, and modern web applications using Next.js. In my role, I develop responsive and high-performance user interfaces, implement secure authentication systems using NextAuth.js, and create reusable UI components with shadcn/ui and Tailwind CSS. I regularly integrate REST APIs, manage dynamic data rendering, and ensure proper project structuring for scalability and maintainability.",
+        "Currently working as a Frontend Developer building high-performance user interfaces with Next.js, NextAuth.js, shadcn/ui, and Tailwind CSS. Focus on responsive design, API integration, and scalable code structure.",
     },
   ];
 
@@ -211,48 +329,72 @@ const Experience = () => {
       id="experience"
       className="relative w-full bg-black py-24 px-6 md:px-16 text-white overflow-hidden"
     >
-      {/* Background Glow */}
-      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-blue-900/20 via-purple-900/10 to-transparent pointer-events-none"></div>
+      {/* Subtle Background Glow */}
+      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-blue-900/10 via-purple-900/5 to-transparent pointer-events-none" />
 
-      <h2 className="text-4xl md:text-5xl font-bold text-center mb-20 tracking-wide">
-        Experience
-      </h2>
+      <div className="max-w-5xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
+            My <span className="text-cyan-400">Journey</span>
+          </h2>
+          <p className="text-gray-400 text-lg max-w-md mx-auto">
+            Experiences that shaped my skills and growth
+          </p>
+        </div>
 
-      <div className="relative max-w-6xl mx-auto space-y-16">
+        {/* Timeline */}
+        <div className="relative pl-8 md:pl-12">
+          {/* Vertical Line */}
+          <div className="absolute left-4 md:left-8 top-6 bottom-6 w-0.5 bg-gradient-to-b from-cyan-500 via-purple-500 to-transparent" />
 
-        {experiences.map((exp, index) => (
-          <div
-            key={index}
-            ref={(el) => (cardsRef.current[index] = el)}
-            className="relative group"
-          >
-            {/* Side Indicator Line */}
-            <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-blue-500 to-purple-500 rounded-full hidden md:block"></div>
-
-            <div className="ml-0 md:ml-6 bg-white/5 backdrop-blur-lg border border-white/10 rounded-3xl p-6 md:p-10 shadow-2xl transition duration-500 hover:scale-[1.02] hover:border-blue-500/40">
-
-              <div className="flex flex-col md:flex-row md:justify-between md:items-center">
-                <h3 className="text-xl md:text-2xl font-semibold text-blue-400">
-                  {exp.company}
-                </h3>
-
-                <span className="mt-2 md:mt-0 text-green-400 font-medium text-sm md:text-base">
-                  {exp.duration}
-                </span>
+          {experiences.map((exp, index) => (
+            <div
+              key={index}
+              ref={(el) => (cardsRef.current[index] = el)}
+              className="relative mb-16 last:mb-0 group"
+            >
+              {/* Timeline Dot */}
+              <div className="absolute -left-3 md:-left-2 w-6 h-6 bg-black border-4 border-cyan-400 rounded-full flex items-center justify-center z-10 group-hover:scale-110 transition-transform">
+                <div className="w-2 h-2 bg-cyan-400 rounded-full" />
               </div>
 
-              <p className="mt-3 text-gray-300 text-sm md:text-base">
-                <span className="font-semibold text-white">Role:</span>{" "}
-                {exp.role}
-              </p>
+              {/* Experience Card */}
+              <div className="ml-8 md:ml-12 bg-zinc-900/70 backdrop-blur-xl border border-zinc-700/80 rounded-3xl p-8 md:p-10 shadow-xl hover:shadow-2xl hover:border-cyan-400/30 transition-all duration-500 group-hover:-translate-y-1">
+                
+                {/* Top Row */}
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
+                  <div>
+                    <h3 className="text-2xl font-semibold text-white group-hover:text-cyan-300 transition-colors">
+                      {exp.company}
+                    </h3>
+                    <p className="text-cyan-400 font-medium mt-1">{exp.role}</p>
+                  </div>
 
-              <p className="mt-4 text-gray-400 leading-relaxed text-sm md:text-base">
-                {exp.description}
-              </p>
+                  <div className="flex flex-col items-end gap-2">
+                    <span className="px-5 py-1.5 bg-zinc-800 text-cyan-300 text-sm font-medium rounded-full border border-cyan-900/50">
+                      {exp.duration}
+                    </span>
+                    <span className="text-xs uppercase tracking-widest text-gray-500">
+                      {exp.type}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Description */}
+                <p className="text-gray-300 leading-relaxed text-[15px] md:text-base">
+                  {exp.description}
+                </p>
+
+                {/* Subtle Footer Accent */}
+                <div className="h-0.5 w-12 bg-gradient-to-r from-cyan-400 to-purple-500 mt-8 opacity-60 group-hover:w-20 transition-all" />
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
 
+        
+       
       </div>
     </section>
   );

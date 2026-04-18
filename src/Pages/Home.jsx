@@ -130,7 +130,7 @@ import ScrollVelocity from "/src/Componets/ScrollVelocity.jsx";
 import resume1 from "../assets/resume.pdf";
 import GradientText from "../Componets/GradientText.jsx";
 import ShinyText from "../Componets/ShinyText.jsx";
-import LightRays from "../Componets/Lightrays.jsx";
+import LightRays from "../Componets/LightRays.jsx";
 
 const Home = () => {
   const imgRef = useRef();

@@ -96,9 +96,9 @@ import React, { useRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import Particles from "../Componets/Particles";
-import GradientText from '../Componets/GradientText.jsx';
-import CircularText from '../Componets/CircularText.jsx';
+import Particles from "../components/Particles";
+import GradientText from '../components/GradientText.jsx';
+import CircularText from '../components/CircularText.jsx';
 
 gsap.registerPlugin(ScrollTrigger);
 

@@ -7,7 +7,7 @@ import Project from './Pages/Project';
 import Contact from './Pages/Contact';
 import Footer from './Pages/Footer';
 import Menu from './Header/Header';
-import Particles from './Componets/Particles';
+import Particles from './components/Particles';
 import Certificate from './Pages/certificate';
 
 import Experience from './Pages/Experience';

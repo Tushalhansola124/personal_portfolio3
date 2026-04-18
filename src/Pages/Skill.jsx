@@ -209,8 +209,8 @@ import nextjs from "/public/next-js.png";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import Particles from "../Componets/Particles";
-import GradientText from '../Componets/GradientText.jsx';
+import Particles from "../components/Particles";
+import GradientText from '../components/GradientText.jsx';
 
 gsap.registerPlugin(ScrollTrigger);
 

@@ -126,7 +126,7 @@ import React, { useRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import GradientText from "../Componets/GradientText.jsx";
+import GradientText from "../components/GradientText.jsx";
 
 import certificate1 from "/certificate1.png";
 

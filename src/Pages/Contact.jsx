@@ -1,6 +1,6 @@
 import React from "react";
 import { FiMail, FiUser, FiMessageCircle } from "react-icons/fi";
-import Particles from "../Componets/Particles";
+import Particles from "../components/Particles";
 
 
 const Contact = () => {

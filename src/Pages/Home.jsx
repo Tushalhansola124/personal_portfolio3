@@ -125,12 +125,12 @@ import { MdDownload } from "react-icons/md";
 import { Typewriter } from "react-simple-typewriter";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import Particles from "../Componets/Particles";
-import ScrollVelocity from "/src/Componets/ScrollVelocity.jsx";
+import Particles from "../components/Particles.jsx";
+import ScrollVelocity from "/src/components/ScrollVelocity.jsx";
 import resume1 from "/resume.pdf";
-import GradientText from "../Componets/GradientText.jsx";
-import ShinyText from "../Componets/ShinyText.jsx";
-import LightRays from "../Componets/LightRays.jsx";
+import GradientText from "../components/GradientText.jsx";
+import ShinyText from "../components/ShinyText.jsx";
+import LightRays from "../components/LightRays.jsx";
 
 const Home = () => {
   const imgRef = useRef();

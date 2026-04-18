@@ -1,7 +1,7 @@
 import React from "react";
 import { Instagram, Github, Mail, PhoneCall } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa"; // Using react-icons for WhatsApp
-import Particles from "../Componets/Particles"; // Optional if you use Particles
+import Particles from "../components/Particles"; // Optional if you use Particles
 
 const Footer = () => {
   return (

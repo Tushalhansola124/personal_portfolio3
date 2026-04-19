@@ -168,7 +168,7 @@ const Home = () => {
   return (
     <>
       {/* Background Rays */}
-      <div className="absolute w-full h-screen">
+    <div className="absolute inset-0 w-full h-full">
         <LightRays
           raysOrigin="top-center"
           raysColor="black"
@@ -179,7 +179,7 @@ const Home = () => {
         />
       </div>
 
-      <div className="relative min-h-screen bg-gray-950 flex flex-col md:flex-row items-center justify-center px-6 md:px-16 overflow-hidden">
+    <div className="relative min-h-screen bg-gray-950 flex flex-col md:flex-row items-center justify-center px-6 md:px-16">
         <Particles />
 
         {/* RIGHT SECTION (IMAGE FIRST ON MOBILE) */}
@@ -215,26 +215,25 @@ const Home = () => {
                      order-2 md:order-1 
                      text-center md:text-left"
         >
-          <h1 className="text-white text-4xl sm:text-5xl md:text-7xl font-bold leading-tight">
-            I'm a{" "}
-            <GradientText colors={["#fff", "#fff"]} animationSpeed={0}>
-              <div className="mt-6 h-[120px] md:h-[180px] w-full md:w-[600px] mx-auto md:mx-0">
-                <Typewriter
-                  words={[
-                    "Frontend Web Developer",
-                    "React / Next.js Developer",
-                    "PHP Developer",
-                  ]}
-                  cursor
-                  loop
-                  typeSpeed={120}
-                  delaySpeed={50}
-                  deleteSpeed={100}
-                />
-              </div>
-            </GradientText>
-          </h1>
-
+          <h1 className="text-white text-4xl sm:text-5xl md:text-7xl font-bold leading-[1.2]">
+  I'm a{" "} 
+  <GradientText colors={["#fff", "#fff"]} animationSpeed={0}>
+    <div className="mt-4 min-h-[120px] md:min-h-[160px] w-full max-w-[600px] mx-auto md:mx-0 overflow-visible">
+      <Typewriter
+        words={[
+          "Frontend Web Developer",
+          "React / Next.js Developer",
+          "PHP Developer",
+        ]}
+        cursor
+        loop
+        typeSpeed={120}
+        delaySpeed={50}
+        deleteSpeed={100}
+      />
+    </div>
+  </GradientText>
+</h1>
           <p className="text-gray-300 text-[1rem] sm:text-[1.1rem] md:text-[1.25rem] max-w-2xl mx-auto md:mx-0 leading-relaxed">
             Hello, I am{" "}
             <span className="font-semibold text-white">Tushal</span>,
@@ -260,10 +259,10 @@ const Home = () => {
       </div>
 
       {/* Bottom Scroll Text */}
-      <ScrollVelocity
-        texts={["Frontend Developer *", " * React Js Developer"]}
-        velocity={200}
-      />
+      {/* <ScrollVelocity
+        texts={["Frontend Developer *", " * Next Js Developer"]}
+        velocity={100}
+      /> */}
     </>
   );
 };

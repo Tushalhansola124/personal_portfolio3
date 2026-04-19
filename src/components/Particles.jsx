@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { Renderer, Camera, Geometry, Program, Mesh } from "ogl";
 import React from "react";
 import './Particles.css';
-import Home from "../Pages/Home";
+
 
 const defaultColors = ["#ffffff", "#ffffff", "#ffffff"];
 

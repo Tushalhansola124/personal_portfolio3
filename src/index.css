@@ -9,3 +9,8 @@ body {
 * {
   font-family: 'Poppins', sans-serif;
 }
+
+html, body {
+  background-color: #030712; /* gray-950 */
+  scroll-behavior: smooth;
+}

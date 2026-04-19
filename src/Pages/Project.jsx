@@ -141,20 +141,18 @@
 // export default Project;
 
 
-
-
 import React, { useRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import GradientText from "../components/GradientText.jsx";
 
-import sundown from "/public/sundown.jpeg";
-import animation from "/public/GSAP_Project.jpeg";
-import resturant from "/public/resturant.png";
-import chatApp from "/public/chatApp.png";
-import class1 from "/public/class1.png";
-
+import sundown from "/sundown.jpeg";
+import animation from "/GSAP_Project.jpeg";
+import resturant from "/resturant.png";
+import chatApp from "/chatApp.png";
+import class1 from "/class1.png";
+import crud from "/crud-mern.png";
 gsap.registerPlugin(ScrollTrigger);
 
 const Project = () => {
@@ -213,6 +211,16 @@ const Project = () => {
       featured: false,
       desc: "Complete backend + frontend system for computer institute",
     },
+    {
+       id: 6,
+      img: crud,
+      link: "https://frontend-mern-ivory.vercel.app/",
+      title: "Student form make using MERN Stack",
+      category: "fullstack",
+      tech: ["Next.Js", "Express.Js", "MongoDB"],
+      featured: false,
+      desc: "in this project inside when user create ,delete,getAll and edit student",
+    }
   ];
 
   const filteredProjects = activeFilter === "all" 

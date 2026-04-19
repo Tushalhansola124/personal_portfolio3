@@ -323,7 +323,7 @@ const Certificate = () => {
       {/* Modal for Full Certificate View */}
       {selectedCert && (
         <div 
-          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-6"
+          className="fixed inset-0 bg-black/90 z-50 flex items-start justify-center p-4 overflow-y-auto"
           onClick={() => setSelectedCert(null)}
         >
           <div 
@@ -332,7 +332,7 @@ const Certificate = () => {
           >
             <div className="p-8 border-b border-gray-700 flex justify-between items-center">
               <div>
-                <h2 className="text-2xl font-bold">{selectedCert.title}</h2>
+                <h2 className="text-2xl  text-cyan-700 font-bold">{selectedCert.title}</h2>
                 <p className="text-cyan-400">{selectedCert.monthYear} • {selectedCert.issuer}</p>
               </div>
               <button 
